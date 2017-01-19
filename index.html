@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是一个vue</title>
+</head>
+<body>
+    <div id="app">{{ message }}</div>
+    <div id="app-2">
+        <span v-bind:title="message1">
+            {{message2}} Hover your mouse over me for a few seconds to see my dynamically bound title!
+        </span>
+    </div>
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+            {{ todo.text }} {{ todo.descript }}
+            </li>
+        </ol>
+    </div>
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button @click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <script src="./js/plugins/jquery.min.js"></script>
+    <script src="./js/plugins/basic.js"></script>
+    <script src="./js/plugins/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
