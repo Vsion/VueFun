@@ -41,3 +41,7 @@ var app5 = new Vue({
     }
   }
 });
+
+var app_test = new Vue({
+  el: '#app-test'
+});
